@@ -20,7 +20,7 @@ function Home() {
                     </div>
 
                     <div className="pb-5 flex justify-center ">
-                        <img src='https://img.freepik.com/fotos-gratis/bela-paisagem-montanhosa_23-2149063332.jpg?w=900&t=st=1708356631~exp=1708357231~hmac=d44f5a598e45b7663322600ee28062def5426b661e89f1a60d87e38e7f8a4c71' alt="" className='w-2/3' />
+                        <img src='https://img.freepik.com/psd-gratuitas/tela-de-dispositivo-em-branco-de-marketing_23-2150453728.jpg?t=st=1709575907~exp=1709579507~hmac=444f9cc427245bde9fb5385b53bacee4c8c04eace3b537700294cb3ce97b034f&w=826"" className='w-2/3' />
 
                     </div>
                 </div>
