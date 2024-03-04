@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import Usuario from '../../models/Usuario'
 import { cadastrarUsuario } from '../../services/Service'
 import './Cadastro.css'
-import catGif from '../../assets/carregar.gif'
 import { toastAlerta } from '../../util/toastAlerta'
 
 function Cadastro() {
@@ -110,7 +109,7 @@ function Cadastro() {
                             name="foto"
                             placeholder="Foto"
                             className="border-2 border-slate-700 rounded p-2"
-                            value={usuario.foto}
+                           value={usuario.foto}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </div>
@@ -143,15 +142,13 @@ function Cadastro() {
                             Cancelar
                         </button>
                         <button type='submit' className="rounded bg-purple-400 hover:bg-purple-900 text-white w-1/2 py-2 flex justify-center">
-                            {isLoading ?
-                                <img className='flex justify-center' src={catGif} alt="Gif de carregar" width="35px" /> :
-                                <span>Cadastrar</span>}
+                            {isLoading ? <span>Carregando...</span> : <span>Cadastrar</span>}
                         </button>
                     </div>
                 </form>
             </div>
         </>
-    )
+    );
 }
 
-export default Cadastro
+export default Cadastro;
