@@ -64,7 +64,7 @@ function Login() {
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </div>
-                    <button type='submit' className="rounded bg-purple-400 hover:bg-purple-900 text-white w-1/2 py-2 flex justify-center">
+                    <button type='submit' className="rounded bg-teal-500 hover:bg-teal-900 text-white w-1/2 py-2 flex justify-center">
                         {isLoading ? <span>Carregando...</span> : <span>Entrar</span>}
                     </button>
 
@@ -72,7 +72,7 @@ function Login() {
 
                     <p>
                         Ainda não tem uma conta?{' '}
-                        <Link to="/cadastro" className="text-purple-600 hover:text-purple-900">
+                        <Link to="/cadastro" className="text-teal-600 hover:text-purple-900">
                             Cadastre-se
                         </Link>
                     </p>
