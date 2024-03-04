@@ -53,7 +53,7 @@ function Cadastro() {
     async function cadastrarNovoUsuario(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
         setIsLoading(true)
-        if (confirmaSenha === usuario.senha && usuario.senha.length >= 8) {
+        if (confirmaSenha === usuario.senha && usuario.senha.length >= 4) {
 
             try {
                 await cadastrarUsuario(`/usuarios/cadastrar`, usuario, setUsuarioResposta)
