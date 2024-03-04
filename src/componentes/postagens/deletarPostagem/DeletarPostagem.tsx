@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { AuthContext } from '../../../contexts/AuthContext'
 import Postagem from '../../../models/Postagem'
@@ -55,10 +55,10 @@ function DeletarPostagem() {
         }
       })
 
-      toastAlerta('Postagem apagada com sucesso', 'sucesso')
+      toastAlerta('Postagem apagada com sucesso', 'success')
 
     } catch (error) {
-      toastAlerta('Erro ao apagar a Postagem', 'erro')
+      toastAlerta('Erro ao apagar a Postagem', 'error')
     }
 
     retornar()
