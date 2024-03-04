@@ -4,7 +4,7 @@ import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthContext';
 import UsuarioLogin from '../../models/UsuarioLogin';
-import catGif from '../../assets/carregar.gif'
+
 
 function Login() {
     let navigate = useNavigate();
@@ -65,8 +65,7 @@ function Login() {
                         />
                     </div>
                     <button type='submit' className="rounded bg-purple-400 hover:bg-purple-900 text-white w-1/2 py-2 flex justify-center">
-                        {isLoading ? <img className='flex justify-center' src={catGif} alt="Gif de carregar" width="35px" /> :
-                            <span>Entrar</span>}
+                        {isLoading ? <span>Carregando...</span> : <span>Entrar</span>}
                     </button>
 
                     <hr className="border-slate-800 w-full" />
